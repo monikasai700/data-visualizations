@@ -1,0 +1,18 @@
+Steps used to create a visualization(visualization that captures the share of the top 500 each country has for a given year)
+1)combined 6 and 11 files of each year in to one 
+I did this using a tool named ABLEBITS in Excel , where i have attached the required files and clicked on the COPY SEVERAL SHEETS option
+which gave me a single combined 6 and 11 sheets for every year
+that is i got combined files from 1993 to 2015
+2)Then added a new column with name YEAR1 where i have entered the respective year i.e: 1993 for all the cells in combined 06 and 11 datasets of 1993 
+then column with value 1994 in comnined 6 and 11 datasets of 1994 , followed by 1995 ,1996 so on till 2015
+3)merged all these seperate data sets of each year to one final merged file using ABLEBITS i.e: all files from 1993 to 2015 into one
+4)connected this file in tableau data source
+5)added columns as YEAR1 and rows as count of computer(added a quick table calculation to percent of total) and country column as color which gave me an area chart
+6)created a dashboard with 1980 x 1024 size.
+7)Exported image.
+
+
+Data source file name Tableau
+final_full.csv
+exported image name
+project1.png

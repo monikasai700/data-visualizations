@@ -1,0 +1,4 @@
+from csv import reader
+with open('try.csv','r') as f:
+  data = list(reader(f)
+  data[1]

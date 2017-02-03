@@ -1,0 +1,9 @@
+PROJECT TITLE  : Terrorism attacks on different countries 
+GOAL : To Visualize 
+DATA SOURCE:
+GLOBAL TERRORISM DATABASE    https://www.start.umd.edu/gtd/    
+
+https://ourworldindata.org/terrorism/
+http://www.satp.org/satporgtp/countries/india/database/indiafatalities.htm
+http://www.johnstonsarchive.net/terrorism/wrjp255a.html
+https://www.buzzfeed.com/peteraldhous/american-terrorism-by-the-numbers?utm_term=.cvX7w7o0B#.vgwgVgOvY

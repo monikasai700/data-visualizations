@@ -1,0 +1,1132 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10000.16.0812.0001                               -->
+<workbook source-build='10.0.0 (10000.16.0812.0001)' source-platform='win' version='10.0' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='TOP500_199306' inline='true' name='federated.050ruxi170gh7l12a17zi12tmm0j' version='10.0'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='TOP500_199306' name='textscan.15azmmz09kte41158trhy0lj7lgg'>
+            <connection class='textscan' directory='C:/Users/Sai Monika Tadaka/Documents/Data Visualization' filename='TOP500_199306.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation join='inner' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[TOP500_199306.csv].[Nhalf]' />
+              <expression op='[TOP500_199311.csv].[Nhalf]' />
+            </expression>
+          </clause>
+          <relation connection='textscan.15azmmz09kte41158trhy0lj7lgg' name='TOP500_199306.csv' table='[TOP500_199306#csv]' type='table'>
+            <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Rank' ordinal='0' />
+              <column datatype='string' name='Site' ordinal='1' />
+              <column datatype='string' name='Manufacturer' ordinal='2' />
+              <column datatype='string' name='Computer' ordinal='3' />
+              <column datatype='string' name='Country' ordinal='4' />
+              <column datatype='integer' name='Year' ordinal='5' />
+              <column datatype='integer' name='Processors' ordinal='6' />
+              <column datatype='real' name='RMax' ordinal='7' />
+              <column datatype='real' name='RPeak' ordinal='8' />
+              <column datatype='integer' name='Nmax' ordinal='9' />
+              <column datatype='integer' name='Nhalf' ordinal='10' />
+              <column datatype='string' name='Processor Family' ordinal='11' />
+              <column datatype='string' name='Processor' ordinal='12' />
+              <column datatype='real' name='Proc. Frequency' ordinal='13' />
+              <column datatype='string' name='System Family' ordinal='14' />
+              <column datatype='string' name='Operating System' ordinal='15' />
+              <column datatype='string' name='Architecture' ordinal='16' />
+              <column datatype='string' name='Segment' ordinal='17' />
+              <column datatype='string' name='Application Area' ordinal='18' />
+              <column datatype='string' name='Interconnect Family' ordinal='19' />
+              <column datatype='string' name='Interconnect' ordinal='20' />
+              <column datatype='string' name='Region' ordinal='21' />
+              <column datatype='string' name='Continent' ordinal='22' />
+            </columns>
+          </relation>
+          <relation connection='textscan.15azmmz09kte41158trhy0lj7lgg' name='TOP500_199311.csv' table='[TOP500_199311#csv]' type='table'>
+            <columns character-set='windows-1252' header='yes' locale='en_US' separator=','>
+              <column datatype='integer' name='Rank' ordinal='0' />
+              <column datatype='string' name='Site' ordinal='1' />
+              <column datatype='string' name='Manufacturer' ordinal='2' />
+              <column datatype='string' name='Computer' ordinal='3' />
+              <column datatype='string' name='Country' ordinal='4' />
+              <column datatype='integer' name='Year' ordinal='5' />
+              <column datatype='integer' name='Processors' ordinal='6' />
+              <column datatype='real' name='RMax' ordinal='7' />
+              <column datatype='real' name='RPeak' ordinal='8' />
+              <column datatype='integer' name='Nmax' ordinal='9' />
+              <column datatype='integer' name='Nhalf' ordinal='10' />
+              <column datatype='string' name='Processor Family' ordinal='11' />
+              <column datatype='string' name='Processor' ordinal='12' />
+              <column datatype='real' name='Proc. Frequency' ordinal='13' />
+              <column datatype='string' name='System Family' ordinal='14' />
+              <column datatype='string' name='Operating System' ordinal='15' />
+              <column datatype='string' name='Architecture' ordinal='16' />
+              <column datatype='string' name='Segment' ordinal='17' />
+              <column datatype='string' name='Application Area' ordinal='18' />
+              <column datatype='string' name='Interconnect Family' ordinal='19' />
+              <column datatype='string' name='Interconnect' ordinal='20' />
+              <column datatype='string' name='Region' ordinal='21' />
+              <column datatype='string' name='Continent' ordinal='22' />
+            </columns>
+          </relation>
+        </relation>
+        <cols>
+          <map key='[Application Area (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Application Area]' />
+          <map key='[Application Area]' value='[TOP500_199306.csv].[Application Area]' />
+          <map key='[Architecture (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Architecture]' />
+          <map key='[Architecture]' value='[TOP500_199306.csv].[Architecture]' />
+          <map key='[Computer (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Computer]' />
+          <map key='[Computer]' value='[TOP500_199306.csv].[Computer]' />
+          <map key='[Continent (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Continent]' />
+          <map key='[Continent]' value='[TOP500_199306.csv].[Continent]' />
+          <map key='[Country (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Country]' />
+          <map key='[Country]' value='[TOP500_199306.csv].[Country]' />
+          <map key='[Interconnect (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Interconnect]' />
+          <map key='[Interconnect Family (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Interconnect Family]' />
+          <map key='[Interconnect Family]' value='[TOP500_199306.csv].[Interconnect Family]' />
+          <map key='[Interconnect]' value='[TOP500_199306.csv].[Interconnect]' />
+          <map key='[Manufacturer (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Manufacturer]' />
+          <map key='[Manufacturer]' value='[TOP500_199306.csv].[Manufacturer]' />
+          <map key='[Nhalf (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Nhalf]' />
+          <map key='[Nhalf]' value='[TOP500_199306.csv].[Nhalf]' />
+          <map key='[Nmax (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Nmax]' />
+          <map key='[Nmax]' value='[TOP500_199306.csv].[Nmax]' />
+          <map key='[Operating System (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Operating System]' />
+          <map key='[Operating System]' value='[TOP500_199306.csv].[Operating System]' />
+          <map key='[Proc. Frequency (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Proc. Frequency]' />
+          <map key='[Proc. Frequency]' value='[TOP500_199306.csv].[Proc. Frequency]' />
+          <map key='[Processor (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Processor]' />
+          <map key='[Processor Family (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Processor Family]' />
+          <map key='[Processor Family]' value='[TOP500_199306.csv].[Processor Family]' />
+          <map key='[Processor]' value='[TOP500_199306.csv].[Processor]' />
+          <map key='[Processors (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Processors]' />
+          <map key='[Processors]' value='[TOP500_199306.csv].[Processors]' />
+          <map key='[RMax (TOP500_199311.csv)]' value='[TOP500_199311.csv].[RMax]' />
+          <map key='[RMax]' value='[TOP500_199306.csv].[RMax]' />
+          <map key='[RPeak (TOP500_199311.csv)]' value='[TOP500_199311.csv].[RPeak]' />
+          <map key='[RPeak]' value='[TOP500_199306.csv].[RPeak]' />
+          <map key='[Rank (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Rank]' />
+          <map key='[Rank]' value='[TOP500_199306.csv].[Rank]' />
+          <map key='[Region (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Region]' />
+          <map key='[Region]' value='[TOP500_199306.csv].[Region]' />
+          <map key='[Segment (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Segment]' />
+          <map key='[Segment]' value='[TOP500_199306.csv].[Segment]' />
+          <map key='[Site (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Site]' />
+          <map key='[Site]' value='[TOP500_199306.csv].[Site]' />
+          <map key='[System Family (TOP500_199311.csv)]' value='[TOP500_199311.csv].[System Family]' />
+          <map key='[System Family]' value='[TOP500_199306.csv].[System Family]' />
+          <map key='[Year (TOP500_199311.csv)]' value='[TOP500_199311.csv].[Year]' />
+          <map key='[Year]' value='[TOP500_199306.csv].[Year]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Site]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Site</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manufacturer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Manufacturer]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Manufacturer</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Computer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Computer]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Computer</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Processors</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Processors]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Processors</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RMax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RMax]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>RMax</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RPeak</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RPeak]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>RPeak</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nmax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nmax]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Nmax</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nhalf</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nhalf]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Nhalf</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Processor Family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Processor Family]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Processor Family</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Processor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Processor]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Processor</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Proc. Frequency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Proc. Frequency]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Proc. Frequency</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>System Family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[System Family]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>System Family</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating System</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Operating System]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Operating System</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Architecture</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Architecture]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Architecture</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Segment]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Application Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Application Area]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Application Area</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interconnect Family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Interconnect Family]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Interconnect Family</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interconnect</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Interconnect]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Interconnect</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Continent]</local-name>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TOP500_199306.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='record-delimiter'>&quot;\\r&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Rank (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Rank</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Site (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Site</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Manufacturer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Manufacturer (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Manufacturer</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Computer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Computer (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Computer</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Country</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Processors</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Processors (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Processors</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RMax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RMax (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>RMax</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RPeak</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[RPeak (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>RPeak</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nmax</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nmax (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Nmax</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Nhalf</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Nhalf (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Nhalf</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Processor Family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Processor Family (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Processor Family</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Processor</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Processor (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Processor</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Proc. Frequency</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Proc. Frequency (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Proc. Frequency</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>System Family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[System Family (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>System Family</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Operating System</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Operating System (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Operating System</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Architecture</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Architecture (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Architecture</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Segment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Segment (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Segment</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Application Area</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Application Area (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Application Area</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interconnect Family</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Interconnect Family (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Interconnect Family</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Interconnect</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Interconnect (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Interconnect</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Region (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Region</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Continent</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Continent (TOP500_199311.csv)]</local-name>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias>Continent</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[TOP500_199311.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;ibm-5348_P100-1997&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='record-delimiter'>&quot;\\r&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Application Area (TOP500 199311.csv)' datatype='string' name='[Application Area (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Architecture (TOP500 199311.csv)' datatype='string' name='[Architecture (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Computer (TOP500 199311.csv)' datatype='string' name='[Computer (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Continent (TOP500 199311.csv)' datatype='string' name='[Continent (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Country (TOP500 199311.csv)' datatype='string' name='[Country (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Interconnect (TOP500 199311.csv)' datatype='string' name='[Interconnect (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Interconnect Family (TOP500 199311.csv)' datatype='string' name='[Interconnect Family (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Manufacturer (TOP500 199311.csv)' datatype='string' name='[Manufacturer (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Nhalf (TOP500 199311.csv)' datatype='integer' name='[Nhalf (TOP500_199311.csv)]' role='measure' type='quantitative' />
+      <column caption='Nmax (TOP500 199311.csv)' datatype='integer' name='[Nmax (TOP500_199311.csv)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Operating System (TOP500 199311.csv)' datatype='string' name='[Operating System (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Proc. Frequency (TOP500 199311.csv)' datatype='real' name='[Proc. Frequency (TOP500_199311.csv)]' role='measure' type='quantitative' />
+      <column caption='Processor (TOP500 199311.csv)' datatype='string' name='[Processor (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Processor Family (TOP500 199311.csv)' datatype='string' name='[Processor Family (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Processors (TOP500 199311.csv)' datatype='integer' name='[Processors (TOP500_199311.csv)]' role='measure' type='quantitative' />
+      <column caption='RMax (TOP500 199311.csv)' datatype='real' name='[RMax (TOP500_199311.csv)]' role='measure' type='quantitative' />
+      <column caption='R Max' datatype='real' name='[RMax]' role='measure' type='quantitative' />
+      <column caption='RPeak (TOP500 199311.csv)' datatype='real' name='[RPeak (TOP500_199311.csv)]' role='measure' type='quantitative' />
+      <column caption='R Peak' datatype='real' name='[RPeak]' role='measure' type='quantitative' />
+      <column caption='Rank (TOP500 199311.csv)' datatype='integer' name='[Rank (TOP500_199311.csv)]' role='measure' type='quantitative' />
+      <column caption='Region (TOP500 199311.csv)' datatype='string' name='[Region (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Segment (TOP500 199311.csv)' datatype='string' name='[Segment (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Site (TOP500 199311.csv)' datatype='string' name='[Site (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='System Family (TOP500 199311.csv)' datatype='string' name='[System Family (TOP500_199311.csv)]' role='dimension' type='nominal' />
+      <column caption='Year (TOP500 199311.csv)' datatype='integer' name='[Year (TOP500_199311.csv)]' role='dimension' type='quantitative' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <layout dim-ordering='alphabetic' dim-percentage='0.556017' measure-ordering='alphabetic' measure-percentage='0.443983' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows show-side-pane='false' source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7EAAAOxAGVKw4b
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>

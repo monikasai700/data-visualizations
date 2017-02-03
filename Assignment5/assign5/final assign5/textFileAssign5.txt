@@ -1,0 +1,13 @@
+SAI MOUNIKA TADAKA
+Z1784462
+Steps to calculate Average between CityMPG and HwyMPG:
+1.I used Python to calculate Average beween CityMPG and HwyMPG 
+2.Output of this is copied and pasted to the new excel file named forscatter.csv removed the null values.
+3.Copied the other required columns that is Engine Size, Cyl, HP into the same file where Average is saved
+
+Steps for plotting:
+1.I used scatter_matrix in python for plotting the data
+2.Imported pandas and matplotlib libraries
+3.Imported the scatter_matrix functionalities from pandas library
+4.Loaded the forscatter.csv data file
+5.Plotted the graph using scatter_matrix method 
